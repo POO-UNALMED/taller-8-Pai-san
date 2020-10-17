@@ -29,7 +29,7 @@ public class Portero extends Futbolista {
 		return true;
 	}
 	public String toString() {
-		return super.toString()+" con el dorsal "+this.getDorsal()+".Le han marcado "+this.getGolesRecibidos();
+		return (super.toString()+" con el dorsal "+this.getDorsal()+". Le han marcado "+this.getGolesRecibidos());
 	}
 	public int compareTo(Portero otro) {
 		return (otro.getGolesRecibidos() - this.getGolesRecibidos());
