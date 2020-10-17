@@ -14,13 +14,25 @@ public class Jugador extends Futbolista {
 	this.dorsal=dorsal;
 	}
 	public String toString() {
-		return super.toString()+" con el dorsal "+this.dorsal+". Ha marcado"+this.golesMarcados;
+		return super.toString()+" con el dorsal "+this.getDorsal()+". Ha marcado"+this.getGolesMarcados();
 	}
 	public int compareTo(Jugador otro) {
 		return (this.getEdad() - otro.getEdad());
 	}
 	public boolean jugarConLasManos() {
 		return false;
+	}
+	public short getGolesMarcados() {
+		return golesMarcados;
+	}
+	public void setGolesMarcados(short golesMarcados) {
+		this.golesMarcados = golesMarcados;
+	}
+	public byte getDorsal() {
+		return dorsal;
+	}
+	public void setDorsal(byte dorsal) {
+		this.dorsal = dorsal;
 	}
 
 }
