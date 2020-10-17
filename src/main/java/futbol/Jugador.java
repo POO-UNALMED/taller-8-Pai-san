@@ -14,7 +14,8 @@ public class Jugador extends Futbolista {
 	this.dorsal=dorsal;
 	}
 	public String toString() {
-		return (super.toString()+" con el dorsal "+this.getDorsal()+". Ha marcado"+this.getGolesMarcados());
+		return ("El futbolista " + this.getNombre() + " tiene " + this.getEdad() + ", y juega de " + this.getPosicion() + 
+				" con el dorsal " + this.getDorsal() + ". Ha marcado " + this.getGolesMarcados());
 	}
 	public int compareTo(Jugador otro) {
 		return (this.getEdad() - otro.getEdad());
